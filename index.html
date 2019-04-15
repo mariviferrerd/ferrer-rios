@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ferniví</title>
+    <meta name="title" content="Ferniví">
+    <link rel="icon" type="image/png" href="media/icono.png" />
+    <!-- Metadatos Genéricos -->
+    <meta name="description" content="El Portafolio en el Cielo y el Perreo en el Suelo">
+    <meta name="image" content="*cambiar por una URL de la imagen en línea*">
+    <!-- Metadatos para Schema.org for Google -->
+    <meta itemprop="name" content="FERNIVI'S PORTAFOLIO">
+    <meta itemprop="description" content="El Portafolio en el Cielo y el Perreo en el Suelo">
+    <meta itemprop="image" content="*cambiar por una URL de la imagen en línea*">
+    <!-- Metadatos para Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="FERNIVI'S PORTAFOLIO">
+    <meta name="twitter:description" content="El Portafolio en el cielo y el Perreo en el suelo">
+    <meta name="twitter:image" content="*cambiar por una URL de la imagen en línea*">
+    <!-- Metadatos para Open Graph general (Facebook y Pinterest) -->
+    <meta name="og:title" content="FERNIVI'S PORTAFOLIO">
+    <meta name="og:description" content="El Portafolio en el Cielo y el Perreo en el Suelo">
+    <meta name="og:image" content="*cambiar por una URL de la imagen en línea*">
+    <meta name="og:locale" content="es_CL">
+    <meta name="og:type" content="website">
+    <!-- Ahora vinculamos el estilo -->
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+</head>
+
+<body>
+    <div id="contenido">
+        <header>
+            <h1>FERNIVÍ'S PORTAFOLIO</h1>
+            <h2>El Portafolio en el cielo y el Perreo en el suelo</h2>
+        </header>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="media/video2.mp4" type="video/mp4">
+            <source src="media/video2.ogg" type="video/ogg">
+        </video>
+
+        <h3>LAS CABRAS</h3>
+        <div id="somos">
+
+            <div class="dupla primera">
+                <h4>FERNANDA RÍOS TORRES</h4>
+                <h5>Nunca terminó cuarto medio</h5>
+                <p>Estudiante de Diseño UC, actualmente cursa su 6to semestre. En un futuro, busca ganar dinero sin hacer nada.</p>
+                <address><a href="mailto:forios@uc.cl">¡Hola!</a></address>
+            </div>
+
+            <div class="dupla segunda">
+                <h4>MARÍA VICTORIA FERRER</h4>
+                <h5>Enemiga oficial de las palomas</h5>
+                <p>Estudiante de Diseño UC, actualmente cursa su 6to semestre. Sueña con tener su propio taller y ser su jefa.</p>
+                <address><a href="mailto:miferrer@uc.cl">¡Hola!</a></address>
+            </div>
+
+            <hr />
+        </div><!-- acá cerramos el div id="somos"-->
+
+        <h3>PORTAFOLIO</h3>
+
+        <div id="portafolio">
+
+            <!--acá se colocan y organizan las cosas con programación-->
+
+        </div><!-- acá cerramos el div id="portafolio"-->
+
+        <footer>
+            <p>Procesos de Producción · Sección Web · Primer semestre · 2019 · Hecho con AMOR</p>
+        </footer>
+
+    </div><!-- acá abajo cerramos el div id="contenido"-->
+
+    <!-- Lo que sigue SI es PROGRAMACIÓN -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script>
+        // ESTO SIRVE PARA ARREGLAR CADA ÍTEM DEL PORTAFOLIO COMO ALBAÑILERÍA (MASONRY)
+        window.onload = function() {
+            var container = document.querySelector('#portafolio');
+            var msnry = new Masonry(portafolio, {
+                itemSelector: '.item'
+            });
+        };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="portafolio.js"></script>
+</body>
+
+</html>
